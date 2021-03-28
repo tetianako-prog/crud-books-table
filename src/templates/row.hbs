@@ -1,0 +1,11 @@
+{{#each this}}
+<tr data-index={{idx}}>
+  <th scope="row">{{idx}}</th>
+  <td><input type="text" value="{{title}}" class="title-input" disabled /></td>
+  <td><input type="text" value="{{author}}" disabled /></td>
+  <td><input type="text" value="{{genre}}" disabled /></td>
+  <td><input type="text" value="{{rating}}" disabled /></td>
+  <td><button data-id={{id}} type="button" class="btn btn-danger remove-btn">Удалить</button></td>
+  <td><button data-id={{id}} data-idx={{idx}} type="button" class="btn btn-primary edit-btn">Редактировать</button></td>
+</tr>
+{{/each}}
